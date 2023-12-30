@@ -14,18 +14,18 @@ public class LoginValidationUtil {
 		String secretkey = req.getParameter("secretkey");
 
 		if (null == username || username.trim().equals("")) {
-			errors.put("login.username", "Username should not be empty");
+			errors.put("errUsername", "Username should not be empty");
 		} else if (username.length() < 5)
-			errors.put("login.username", "Username should have min 5 chars");
+			errors.put("errUsername", "Username should have min 5 chars");
 		else if (username.length() > 32)
-			errors.put("login.username", "Username should not have more than 32  chars");
+			errors.put("errUsername", "Username should not have more than 32  chars");
 
 		if (null == secretkey || secretkey.trim().equals("")) {
-			errors.put("login.secretkey", "Password should not be empty");
+			errors.put("errSecretkey", "Password should not be empty");
 		} else if (secretkey.length() < 8)
-			errors.put("login.secretkey", "Password should have min 8 chars");
+			errors.put("errSecretkey", "Password should have min 8 chars");
 		else if (secretkey.length() > 50)
-			errors.put("login.secretkey", "Password should not have more than 50  chars");
+			errors.put("errSecretkey", "Password should not have more than 50  chars");
 
 		return errors;
 	}

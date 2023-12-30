@@ -45,7 +45,8 @@ public class LoginHttpServlet extends HttpServlet {
 				session.setAttribute("username", request.getParameter("username"));
 				request.getRequestDispatcher("/home.jsp").forward(request, response);
 			} else {
-				request.setAttribute("login.message", message);
+				request.setAttribute("errLogin", message);
+				request.setAttribute("formUsername", request.getParameter("username"));
 				request.getRequestDispatcher("/login.jsp").forward(request, response);
 			}
 		} else {
@@ -53,6 +54,7 @@ public class LoginHttpServlet extends HttpServlet {
 			for (String err : errSet)
 				request.setAttribute(err, errors.get(err));
 
+			request.setAttribute("formUsername", request.getParameter("username"));
 			request.getRequestDispatcher("/login.jsp").forward(request, response);
 		}
 	}
