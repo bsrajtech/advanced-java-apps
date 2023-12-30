@@ -8,10 +8,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>e-commerce web application</title>
+    <title>e-commerce</title>
   </head>
   <body>
-	<h1 style="text-align: center">e-commerce web application</h1>
+	 <h1 style="text-align: center"> <a href="./">e-commerce web application</a></h1>
 
 <div class="container">
 	<a href="./login">Login</a>

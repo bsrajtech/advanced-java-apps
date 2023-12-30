@@ -14,7 +14,7 @@
       <title>e-commerce</title>
    </head>
    <body>
-      <h1 style="text-align: center">e-commerce web application</h1>
+      <h1 style="text-align: center"> <a href="./">e-commerce web application</a></h1>
       <div class="container">
          <form action="./register" method="post">
             <div class="mb-3">
@@ -84,9 +84,7 @@
          <p>
          Have account already? <a href="./login"> Click here to login</a>
          </p>
-         <p>
-         <a href="./"> index page</a>
-         </p>
+         
       </div>
    </body>
 </html>

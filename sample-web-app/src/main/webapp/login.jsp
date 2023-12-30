@@ -11,7 +11,7 @@
    </head>
    <body>
       <div class="container">
-         <h1 style="text-align: center">e-commerce web application</h1>
+         <h1 style="text-align: center"> <a href="./">e-commerce web application</a></h1>
          <div class="col-4"></div>
          <div class="col-4">
             <form action="./login" method="post">
@@ -37,7 +37,7 @@
          </div>
          <div class="col-4"></div>
          <p>Dont have account? <a href="./register"> Click here to register</a></p>
-         <p><a href="./"> index page</a></p>
+         
       </div>
       <!-- Optional JavaScript; choose one of the two! -->
       <!-- Option 1: Bootstrap Bundle with Popper -->
